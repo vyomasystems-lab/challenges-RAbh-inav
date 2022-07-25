@@ -19,7 +19,7 @@ begin
 		A1[m-1:0]=A;
 		A1[m+n-1:m]=0;
 		B1=B;
-        for (i=0;i<=n;i=i+1)
+        for (i=0;i<n;i=i+1)
         begin
 			if(B1[i]==1'b0)
 			begin
