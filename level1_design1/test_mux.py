@@ -6,5 +6,7 @@ from cocotb.triggers import Timer
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
-
-    cocotb.log.info('##### CTB: Develop your test here ########')
+    select =13
+    dut.sel.value=select
+    await Timer(2, units='ns')
+    assert dut.out.value == inp12, f"mux result is incorrect: {dut.out.value} != inp12"
