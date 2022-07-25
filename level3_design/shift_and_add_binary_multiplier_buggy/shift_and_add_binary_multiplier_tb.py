@@ -29,7 +29,6 @@ async def shift_and_add_multiplier_bug2(dut):
     # reset
     dut.rst.value = 1
     await FallingEdge(dut.clk)
-    await FallingEdge(dut.clk)
     dut.A.value=10
     dut.B.value=10
     await FallingEdge(dut.clk)
