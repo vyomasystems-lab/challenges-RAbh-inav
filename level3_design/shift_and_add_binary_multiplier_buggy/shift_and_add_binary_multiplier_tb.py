@@ -21,4 +21,16 @@ async def shift_and_add_multiplier_bug1(dut):
     await FallingEdge(dut.clk)
     assert dut.C.value == 1, f"sequence detector result is incorrect: {dut.C.value} != 1"
 
-
+@cocotb.test()
+async def shift_and_add_multiplier_bug1(dut):
+    """Test for bug in shift and add multiplier """
+    clock = Clock(dut.clk, 10, units="ns")  # Create a 10ns period clock on port clk
+    cocotb.start_soon(clock.start())        # Start the clock
+    # reset
+    dut.rst.value = 1
+    await FallingEdge(dut.clk)
+    await FallingEdge(dut.clk)
+    dut.A.value=10
+    dut.B.value=10
+    await FallingEdge(dut.clk)
+    assert dut.C.value == 0, f"sequence detector result is incorrect: {dut.C.value} != 0"
