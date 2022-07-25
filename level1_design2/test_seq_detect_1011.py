@@ -135,7 +135,7 @@ async def test_seq_bug5(dut):
     assert dut.seq_seen.value == 1, f"sequence detector result is incorrect: {dut.seq_seen.value} != 1"
 
 @cocotb.test()
-async def test_seq_bug4(dut):
+async def test_seq_bug6(dut):
     """Test for seq detection """
     clock = Clock(dut.clk, 1000, units="us")  # Create a 1000us period clock on port clk
     cocotb.start_soon(clock.start())        # Start the clock
