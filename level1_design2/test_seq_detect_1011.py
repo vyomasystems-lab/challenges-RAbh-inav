@@ -21,6 +21,7 @@ async def test_seq_bug1(dut):
     # reset
     dut.reset.value = 1
     await FallingEdge(dut.clk) 
+    await FallingEdge(dut.clk)
     assert dut.current_state.value == 0, f"sequence detector result is incorrect: {dut.current_state.value} != IDLE"
 @cocotb.test()
 async def test_seq_bug2(dut):
