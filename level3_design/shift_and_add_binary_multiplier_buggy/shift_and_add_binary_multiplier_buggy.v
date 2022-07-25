@@ -23,7 +23,7 @@ begin
         begin
 			if(B1[i]==1'b0)
 			begin
-				C=C+0;
+				C=C+2;
 			end
 			else if (B1[i]==1'b1)
 			begin
