@@ -11,7 +11,7 @@ from cocotb.clock import Clock
 from cocotb.triggers import RisingEdge, FallingEdge,ClockCycles
 
 @cocotb.test()
-async def test_seq_bug2(dut):
+async def test_seq_bug1(dut):
     """Test for seq detection """
 
     clock = Clock(dut.clk, 10, units="ps")  # Create a 10us period clock on port clk
