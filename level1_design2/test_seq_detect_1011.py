@@ -34,7 +34,7 @@ async def test_seq_bug1(dut):
     dut.inp_bit.value=1
     cocotb.log.info(dut.current_state.value)
     await FallingEdge(dut.clk)
-    assert dut.seq_seen.value == 4, f"sequence detector result is incorrect: {dut.seq_seen.value} != 1"
+    assert dut.seq_seen.value == 1, f"sequence detector result is incorrect: {dut.seq_seen.value} != 1"
 
 @cocotb.test()
 async def test_seq_bug2(dut):
