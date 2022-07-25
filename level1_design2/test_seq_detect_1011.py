@@ -31,15 +31,15 @@ async def test_seq_bug2(dut):
     dut.reset.value = 0
     dut.inp_bit.value=1
     cocotb.log.info(dut.current_state.value)
-    await ClockCycles(dut.clk, 2)
+    await ClockCycles(dut.clk, 1)
     dut.inp_bit.value=0
     cocotb.log.info(dut.current_state.value)
-    await ClockCycles(dut.clk, 2)
+    await ClockCycles(dut.clk, 1)
     dut.inp_bit.value=1
     cocotb.log.info(dut.current_state.value)
-    await ClockCycles(dut.clk, 2)
+    await ClockCycles(dut.clk, 1)
     dut.inp_bit.value=1
     cocotb.log.info(dut.current_state.value)
-    await ClockCycles(dut.clk, 2)
+    await ClockCycles(dut.clk, 1)
     assert dut.current_state.value == 2, f"sequence detector result is incorrect: {dut.next_state.value} != 1011"
 
