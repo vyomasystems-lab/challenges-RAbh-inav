@@ -16,7 +16,8 @@ async def test_seq_bug1(dut):
 
     clock = Clock(dut.clk, 10, units="us")  # Create a 10us period clock on port clk
     cocotb.start_soon(clock.start())        # Start the clock
-
+    dut.inp_bit.value=1
+    await FallingEdge(dut.clk)
     # reset
     dut.reset.value = 1
     await FallingEdge(dut.clk) 
