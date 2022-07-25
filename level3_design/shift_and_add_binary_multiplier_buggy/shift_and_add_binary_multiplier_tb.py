@@ -22,7 +22,7 @@ async def shift_and_add_multiplier_bug1(dut):
     assert dut.C.value == 1, f"sequence detector result is incorrect: {dut.C.value} != 1"
 
 @cocotb.test()
-async def shift_and_add_multiplier_bug1(dut):
+async def shift_and_add_multiplier_bug2(dut):
     """Test for bug in shift and add multiplier """
     clock = Clock(dut.clk, 10, units="ns")  # Create a 10ns period clock on port clk
     cocotb.start_soon(clock.start())        # Start the clock
