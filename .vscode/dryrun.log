@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/workspace/challenges-RAbh-inav'
+make: Leaving directory '/workspace/challenges-RAbh-inav'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
