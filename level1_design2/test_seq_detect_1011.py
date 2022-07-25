@@ -17,6 +17,7 @@ async def test_seq_bug2(dut):
     cocotb.start_soon(clock.start())        # Start the clock
 
     # reset
+    dut.reset.value = 1
     dut.reset.value = 0
     dut.inp_bit.value=1
     cocotb.log.info(dut.current_state.value)
