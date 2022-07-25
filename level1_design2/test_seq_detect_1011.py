@@ -44,8 +44,8 @@ async def test_seq_bug2(dut):
     cocotb.start_soon(clock.start())        # Start the clock
 
     # reset
-    await FallingEdge(dut.clk)
     dut.reset.value = 1
+    await FallingEdge(dut.clk)
     await FallingEdge(dut.clk)
     dut.reset.value = 0
     await FallingEdge(dut.clk)
