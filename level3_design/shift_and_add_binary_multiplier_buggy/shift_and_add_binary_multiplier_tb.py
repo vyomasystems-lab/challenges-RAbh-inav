@@ -16,10 +16,10 @@ async def shift_and_add_multiplier_bug1(dut):
     await FallingEdge(dut.clk)
     dut.rst.value = 0
     await FallingEdge(dut.clk)
-    dut.A.value=1
+    dut.A.value=13
     dut.B.value=1
     await FallingEdge(dut.clk)
-    assert dut.C.value == 1, f"sequence detector result is incorrect: {dut.C.value} != 1"
+    assert dut.C.value == 13, f"sequence detector result is incorrect: {dut.C.value} != 13"
 
 @cocotb.test()
 async def shift_and_add_multiplier_bug2(dut):
