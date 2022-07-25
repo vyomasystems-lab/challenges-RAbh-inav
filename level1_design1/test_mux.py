@@ -11,5 +11,6 @@ async def test_mux2(dut):
     inp12= 3
     dut.sel.value=select
     dut.inp13.value=inp13
+    dut.inp12.value=inp12
     await Timer(2, units='ns')
     assert dut.out.value == 2, f"mux result is incorrect: {dut.out.value} != inp13"
