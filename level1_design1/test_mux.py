@@ -6,9 +6,10 @@ from cocotb.triggers import Timer
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
-    select =30
-    inp30= 2
+    select =13
+    inp13= 2
+    inp12= 3
     dut.sel.value=select
-    dut.inp30.value=inp30
+    dut.inp13.value=inp13
     await Timer(2, units='ns')
-    assert dut.out.value == 2, f"mux result is incorrect: {dut.out.value} != inp30"
+    assert dut.out.value == 2, f"mux result is incorrect: {dut.out.value} != inp13"
