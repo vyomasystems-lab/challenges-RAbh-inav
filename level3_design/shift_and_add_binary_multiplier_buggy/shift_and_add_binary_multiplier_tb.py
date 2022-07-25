@@ -19,6 +19,7 @@ async def shift_and_add_multiplier_bug1(dut):
     dut.A.value=13
     dut.B.value=3
     await FallingEdge(dut.clk)
+    cocotb.log.info(A1,"",B1)
     assert dut.C.value == 39, f"Multiplier result is incorrect: {dut.C.value} != 39"
 
 @cocotb.test()
