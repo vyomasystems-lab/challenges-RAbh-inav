@@ -30,7 +30,6 @@ async def test_seq_bug2(dut):
     # reset
     dut.reset.value = 0
     dut.inp_bit.value=1
-    await FallingEdge(dut.clk)
     dut.inp_bit.value=1
     await FallingEdge(dut.clk)
     dut.inp_bit.value=1
