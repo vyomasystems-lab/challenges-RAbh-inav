@@ -5,7 +5,7 @@ input clk,rst;
 input [m-1:0] A;
 input [n-1:0] B;
 output reg [m+n-1:0]C;
-reg [m+n-2:0]A1;
+reg [m+n-1:0]A1;
 reg [n-1:0]B1;
 always@(posedge clk or posedge rst )
 begin
