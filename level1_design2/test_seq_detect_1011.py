@@ -13,7 +13,7 @@ from cocotb.triggers import RisingEdge, FallingEdge,ClockCycles
 @cocotb.test()
 async def test_seq_bug1(dut):
     """Test for seq detection """
-    clock = Clock(dut.clk, 10, units="ps")  # Create a 10ps period clock on port clk
+    clock = Clock(dut.clk, 10, units="ns")  # Create a 10ns period clock on port clk
     cocotb.start_soon(clock.start())        # Start the clock
     # reset
     dut.reset.value = 1
@@ -56,7 +56,7 @@ async def test_seq_bug2(dut):
 @cocotb.test()
 async def test_seq_bug3(dut):
     """Test for seq detection """
-    clock = Clock(dut.clk, 100, units="ns")  # Create a 100ns period clock on port clk
+    clock = Clock(dut.clk, 10, units="ns")  # Create a 10ns period clock on port clk
     cocotb.start_soon(clock.start())        # Start the clock
     # reset
     dut.reset.value = 1
@@ -81,7 +81,7 @@ async def test_seq_bug3(dut):
 @cocotb.test()
 async def test_seq_bug4(dut):
     """Test for seq detection """
-    clock = Clock(dut.clk, 10, units="us")  # Create a 10us period clock on port clk
+    clock = Clock(dut.clk, 10, units="ns")  # Create a 10ns period clock on port clk
     cocotb.start_soon(clock.start())        # Start the clock
     # reset
     dut.reset.value = 1
@@ -108,7 +108,7 @@ async def test_seq_bug4(dut):
 @cocotb.test()
 async def test_seq_bug5(dut):
     """Test for seq detection """
-    clock = Clock(dut.clk, 100, units="us")  # Create a 100us period clock on port clk
+    clock = Clock(dut.clk, 10, units="ns")  # Create a 10ns period clock on port clk
     cocotb.start_soon(clock.start())        # Start the clock
     # reset
     dut.reset.value = 1
@@ -137,7 +137,7 @@ async def test_seq_bug5(dut):
 @cocotb.test()
 async def test_seq_bug6(dut):
     """Test for seq detection """
-    clock = Clock(dut.clk, 1000, units="us")  # Create a 1000us period clock on port clk
+    clock = Clock(dut.clk, 10, units="ns")  # Create a 10ns period clock on port clk
     cocotb.start_soon(clock.start())        # Start the clock
     # reset
     dut.reset.value = 1
