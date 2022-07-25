@@ -30,7 +30,7 @@ async def test_seq_bug2(dut):
     # reset
     dut.reset.value = 0
     dut.inp_bit.value=1
-    cocotb.log.info(dut.current_state.value,clk)
+    cocotb.log.info(dut.current_state.value,dut.clk)
     await ClockCycles(dut.clk, 1,rising=False)
     dut.inp_bit.value=0
     cocotb.log.info(dut.current_state.value)
