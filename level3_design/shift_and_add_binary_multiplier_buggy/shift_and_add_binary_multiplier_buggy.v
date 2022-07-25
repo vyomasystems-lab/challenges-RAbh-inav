@@ -14,17 +14,17 @@ begin
 		C=1;
 		end
 		else 
-		if (B!=103)
+		if (B!=63)
 		begin
 		C=0;
 		A1[m-1:0]=A;
-		A1[m+n-2:m]=0;
+		A1[m+n-1:m]=0;
 		B1=B;
         for (i=0;i<n;i=i+1)
         begin
 			if(B1[i]==1'b0)
 			begin
-				C=C+0;
+				C=C+1;
 			end
 			else if (B1[i]==1'b1)
 			begin
