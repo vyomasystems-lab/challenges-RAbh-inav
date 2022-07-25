@@ -4,7 +4,7 @@ import cocotb
 from cocotb.triggers import Timer
 
 @cocotb.test()
-async def test_mux2(dut):
+async def test_mux(dut):
     """Test for mux2"""
     select =13
     inp13= 2
