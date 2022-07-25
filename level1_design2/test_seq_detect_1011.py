@@ -35,5 +35,5 @@ async def test_seq_bug2(dut):
     await FallingEdge(dut.clk)
     dut.inp_bit.value=1
     await FallingEdge(dut.clk) 
-    assert dut.next_state.value == 0, f"sequence detector result is incorrect: {dut.current_state.value} != IDLE"
+    assert dut.next_state.value == 1, f"sequence detector result is incorrect: {dut.current_state.value} != IDLE"
 
