@@ -7,7 +7,7 @@
 ![gitpod environment](https://user-images.githubusercontent.com/89691159/181111599-38a3bd40-93c2-4650-bd4b-7c43b21a9362.JPG)
 
 ## VERIFICATION ENVIRONMENT
-The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drive inputs to Design Under Test(DUT)(Multiplexer) which has 31 two bit inputs inp0 to inp30 with a 5 bit select input to select from those 31 inputs to give a 2 bit output out.
+The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drive inputs to Design Under Test(DUT)(Multiplexer) which takes in 31 two bit inputs inp0 to inp30 along with a 5 bit select input to select from those 31 inputs to give a 2 bit output out.
 
 Values are assigned using
     
@@ -19,11 +19,13 @@ Values are assigned using
     
     dut.inp13.value=inp13 
     
-It waits for a specific time for tasks to complete using a timer
+It waits for a specific time for tasks to complete using a timer imported from cocotb.triggers
+
+    from cocotb.triggers import Timer
     
     await Timer(2, units='ns')
     
-The assert statement is used for comparing the adder's outut to the expected value.
+The assert statement is used for comparing the multiplexer's output to the expected value.
 
 The following error is seen:
 
@@ -74,7 +76,7 @@ Output mismatches for the above inputs proving that there is a design bug
 ![level 1 mux  result 1](https://user-images.githubusercontent.com/89691159/181101384-5b691bd3-481c-4afc-87f4-bba4a8dd0dfe.JPG)
 ![level 1 mux  result 2](https://user-images.githubusercontent.com/89691159/181101414-fb881eba-0931-4856-a3ec-4009df5f0246.JPG)
 
-## DESIGN BUG AND EXPLANATION
+## DESIGN BUGS AND EXPLANATION
 
 ### BUG1
 For test scenarios 1 and 3 , bug is found in these lines
@@ -106,4 +108,4 @@ Functional verification using software simulation has been created using directe
 
 ## IS THE VERIFICATION COMPLETE?
 
- Functional Verification is complete as all the bugs have been found in the design using test scenarios 
+ Functional Verification is complete and fault coverage is done as all the bugs have been found in the design using test scenarios 
