@@ -24,7 +24,7 @@ begin
         begin
 			if(B1[i]==1'b0)
 			begin
-				C=C+1;
+				C=C+0;
 			end
 			else if (B1[i]==1'b1)
 			begin
