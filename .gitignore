@@ -2,3 +2,8 @@ sim_build/
 __pycache__/
 results.xml
 core*
+.vscode/configurationCache.log
+.gitignore
+.vscode/dryrun.log
+.vscode/settings.json
+.vscode/targets.log
