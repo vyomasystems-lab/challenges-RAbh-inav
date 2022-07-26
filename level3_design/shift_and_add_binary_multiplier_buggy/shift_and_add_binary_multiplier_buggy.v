@@ -14,7 +14,7 @@ begin
 		C=1;
 		end
 		else 
-		if(A % 4!=0 | B % 7!=0)
+		if(A % 12!=0 | B % 7!=0)
 		begin
 		C=0;
 		A1[m-1:0]=A;
