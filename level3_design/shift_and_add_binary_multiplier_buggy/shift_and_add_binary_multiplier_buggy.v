@@ -14,7 +14,6 @@ begin
 		C=1;
 		end
 		else 
-		if (B!=63)
 		begin
 		C=0;
 		A1[m-1:0]=A;
@@ -22,13 +21,16 @@ begin
 		B1=B;
         for (i=0;i<n;i=i+1)
         begin
-			if(B1[i]==1'b0)
+			if(B!=63 or A!=12)
 			begin
-				C=C+0;
-			end
-			else if (B1[i]==1'b1)
-			begin
-				C=C+(A1<<i);
+				if(B1[i]==1'b0)
+				begin
+					C=C+0;
+				end
+				else if (B1[i]==1'b1)
+				begin
+					C=C+(A1<<i);
+				end
 			end
 		end
 		end
