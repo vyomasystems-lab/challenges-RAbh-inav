@@ -7,7 +7,7 @@
 ![LEVEL1_DESIGN MUX](https://user-images.githubusercontent.com/89691159/181091264-b288a867-0342-46c4-af39-9afe314d9049.JPG)
 
 ## VERIFICATION ENVIRONMENT
-The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drive inputs to Design Under Test(DUT)(Multiplexer) which has 31 two bit inputs inp0 to inp30 with a 5 bit select input to select from those 31 inputs to give a 2 bit output.
+The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drive inputs to Design Under Test(DUT)(Multiplexer) which has 31 two bit inputs inp0 to inp30 with a 5 bit select input to select from those 31 inputs to give a 2 bit output out.
 
 Values are assigned using
     
@@ -30,6 +30,14 @@ The following error is seen:
      assert dut.out.value == 2, f"mux result is incorrect: {dut.out.value} != inp13"
      
 ## TEST SCENARIO
+
+### TEST SCENARIO 1
+
+- Test Inputs: select=13, inp12=3, inp13=2
+- Expected Output: out=2
+- Observed Output in the DUT: dut.out=3
+
+Output mismatches for the above inputs proving that there is a design bug
 
 ## DESIGN BUG
 
