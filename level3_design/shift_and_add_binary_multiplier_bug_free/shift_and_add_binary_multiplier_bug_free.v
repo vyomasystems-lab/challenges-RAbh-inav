@@ -1,4 +1,4 @@
-module shift_and_add_binary_multiplier( clk,rst,A, B, C);
+module shift_and_add_binary_multiplier_bug_free( clk,rst,A, B, C);
 parameter m=8, n=8;
 integer i;
 input clk,rst;
