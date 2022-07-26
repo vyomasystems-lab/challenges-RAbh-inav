@@ -14,6 +14,7 @@ begin
 		C=1;
 		end
 		else 
+		if(B % 4!=0 | A % 7!=0)
 		begin
 		C=0;
 		A1[m-1:0]=A;
@@ -29,6 +30,7 @@ begin
 			begin
 				C=C+(A1<<i);
 			end
+		end
 		end
 end
 endmodule
