@@ -1,6 +1,5 @@
 # See LICENSE.iitm for details
 # See LICENSE.vyoma for details
-import random
 import sys
 import cocotb
 from cocotb.decorators import coroutine
