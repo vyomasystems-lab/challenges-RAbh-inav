@@ -13,7 +13,7 @@ begin
 		begin
 		C=1;
 		end
-		else 
+		else if(B%4!=0 | A%7!=0)
 		begin
 		C=0;
 		A1[m-1:0]=A;
@@ -21,18 +21,14 @@ begin
 		B1=B;
         for (i=0;i<n;i=i+1)
         begin
-			if(B1!=63 or A1!=12)
+			if(B1[i]==1'b0)
 			begin
-				if(B1[i]==1'b0)
-				begin
-					C=C+0;
-				end
-				else if (B1[i]==1'b1)
-				begin
-					C=C+(A1<<i);
-				end
+				C=C+0;
 			end
-		end
+			else if (B1[i]==1'b1)
+			begin
+				C=C+(A1<<i);
+			end
 		end
 end
 endmodule
