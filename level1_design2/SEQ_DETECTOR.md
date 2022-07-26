@@ -67,7 +67,7 @@ Output mismatches for the above inputs proving that there is a design bug
 - Expected Output: seq_seen=1
 - Observed Output in the DUT: dut.seq_seen=0
 
-Output mismatches for the above inputs proving that this case has passed
+Output mismatches for the above inputs proving that there is a design bug
 
 ### TEST SCENARIO 5
 
