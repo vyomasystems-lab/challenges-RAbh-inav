@@ -83,7 +83,7 @@ For test scenarios 1 and 3 , bug is found in these lines
 
 ![level 1 mux error](https://user-images.githubusercontent.com/89691159/181103417-4568274d-ad58-4cf4-9d3a-39fe3bcd368c.JPG)  
 
-There must be a case for select value of 12 . Value of 13 has been repeated 2 times in case instead of a 12 and 13 leading to error for both select values of 12 and 13
+There must be a case for select value of 12 which inturn has caused a design bug . Value of 13 has been repeated 2 times in case instead of a 12 and 13 leading to error for both select values of 12 and 13
 
 ### BUG2
 
@@ -91,7 +91,7 @@ For test scenario 2, bug is found in these lines
 
 ![level 1 mux error 2](https://user-images.githubusercontent.com/89691159/181104273-cd5c202c-8bd3-48ff-981e-d06d3ff0c537.JPG)
 
- There must be a case for the input inp30 also which is missing in the case statement .
+ There must be a case for the input inp30 also which is missing in the case statement causing a design bug
 
 ## DESIGN FIX
 
