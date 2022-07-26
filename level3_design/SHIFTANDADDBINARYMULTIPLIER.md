@@ -1,8 +1,10 @@
-# SEQUENCE_DETECTOR_1011 DESIGN VERIFICATION
+# SHIFT AND ADD BINARY MULTIPLIER DESIGN VERIFICATION
  
  The verification environment is setup using [Vyoma's UpTickPro](https://vyomasystems.com) provided for the hackathon.
  
  Gitpod link of the environment: [Gitpod environment](https://vyomasystem-challengesr-z0ps2j7cguv.ws-us54.gitpod.io/)
+ 
+ Link to licensed source code: [shift and add binary multiplier](https://github.com/RAbh-inav/Shift-and-add-binary-multiplier)
 
 ![gitpod environment](https://user-images.githubusercontent.com/89691159/181111599-38a3bd40-93c2-4650-bd4b-7c43b21a9362.JPG)
 
