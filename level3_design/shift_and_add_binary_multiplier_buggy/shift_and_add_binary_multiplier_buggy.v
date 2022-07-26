@@ -14,7 +14,7 @@ begin
 		C=1;
 		end
 		else 
-		if( B % 9!=0)
+		if( B % 9!=0 )
 		begin
 		C=0;
 		A1[m-1:0]=A;
@@ -28,6 +28,7 @@ begin
 			end
 			else if (B1[i]==1'b1)
 			begin
+				if(A1 <= 12)
 				C=C+(A1<<i);
 			end
 		end
