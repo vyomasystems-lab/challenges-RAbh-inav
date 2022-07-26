@@ -21,7 +21,7 @@ begin
 		B1=B;
         for (i=0;i<n;i=i+1)
         begin
-			if(B!=63 or A!=12)
+			if(B1!=63 or A1!=12)
 			begin
 				if(B1[i]==1'b0)
 				begin
