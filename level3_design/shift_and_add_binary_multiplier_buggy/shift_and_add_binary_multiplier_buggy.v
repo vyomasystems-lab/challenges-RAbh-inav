@@ -28,7 +28,7 @@ begin
 			end
 			else if (B1[i]==1'b1)
 			begin
-				C=C+(A1>>i);
+				C=C+(A1<<i);
 			end
 		end
 		end
