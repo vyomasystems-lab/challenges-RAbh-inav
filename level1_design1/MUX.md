@@ -95,7 +95,7 @@ For test scenario 2, bug is found in these lines
 
 ## DESIGN FIX
 
-- For Bug1 , separate cases for select inputs 12 and 13 are provided
+- For Bug 1 , separate cases for select inputs 12 and 13 are provided
 - For Bug 2 , separate cases for select input 30 is provided
 
 ![level 1 mux error free result](https://user-images.githubusercontent.com/89691159/181108541-05c9d53c-6b9d-4b61-a489-6f7c012d5bb4.JPG)
