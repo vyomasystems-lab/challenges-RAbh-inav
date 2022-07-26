@@ -104,7 +104,7 @@ For test scenario 2, bug is found in these lines
  
 ## VERIFICATION STRATEGY
 
-Functional verification using software simulation has been created using directed test cases for specific inputs where scenarios where DUT could fail to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and finding corner cases for functional analysis. After analysing this HDL design , test cases for select input of 12, 13 and 30 have been included along with other passing cases.
+Functional verification using software simulation has been created using directed test cases for specific inputs where scenarios where DUT could fail to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and finding corner cases for functional analysis. After analysing this HDL design , directed test cases for specific select inputs have been included along with other passing cases.
 
 ## IS THE VERIFICATION COMPLETE?
 
