@@ -4,4 +4,17 @@
  
  Gitpod link of the environment: [Gitpod environment](https://vyomasystem-challengesr-z0ps2j7cguv.ws-us54.gitpod.io/)
 
-![](https://onedrive.live.com/?cid=3F91FE21635E1B02&id=3f91fe21635e1b02%2134308&parId=3f91fe21635e1b02%2134268&o=OneUp)
+![LEVEL1_DESIGN MUX](https://user-images.githubusercontent.com/89691159/181091264-b288a867-0342-46c4-af39-9afe314d9049.JPG)
+
+## VERIFICATION ENVIRONMENT
+The [CoCoTb](https://www.cocotb.org/) based Python test is developed
+
+## TEST SCENARIO
+
+## DESIGN BUG
+
+## DESIGN FIX
+
+## VERIFICATION STRATEGY
+
+## IS THE VERIFICATION COMPLETE?
