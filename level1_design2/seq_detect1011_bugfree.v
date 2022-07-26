@@ -64,10 +64,10 @@ module seq_detect1011_bugfree(seq_seen, inp_bit, reset, clk);
       end
       SEQ_1011:
       begin
-        if(inp_bit ==1)
-            next_state = SEQ_10;
-        else
+        if(inp_bit == 1)
             next_state = SEQ_1;
+        else
+            next_state = SEQ_10;
       end
     endcase
   end
