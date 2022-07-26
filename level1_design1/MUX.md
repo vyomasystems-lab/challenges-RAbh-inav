@@ -4,7 +4,7 @@
  
  Gitpod link of the environment: [Gitpod environment](https://vyomasystem-challengesr-z0ps2j7cguv.ws-us54.gitpod.io/)
 
-![LEVEL1_DESIGN MUX](https://user-images.githubusercontent.com/89691159/181091264-b288a867-0342-46c4-af39-9afe314d9049.JPG)
+![gitpod environment](https://user-images.githubusercontent.com/89691159/181111599-38a3bd40-93c2-4650-bd4b-7c43b21a9362.JPG)
 
 ## VERIFICATION ENVIRONMENT
 The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drive inputs to Design Under Test(DUT)(Multiplexer) which has 31 two bit inputs inp0 to inp30 with a 5 bit select input to select from those 31 inputs to give a 2 bit output out.
