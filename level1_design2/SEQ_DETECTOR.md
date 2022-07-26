@@ -115,7 +115,7 @@ When inp_bit is 1 in this case value, next_state must be SEQ_1 and when inp_bit 
 
 ## DESIGN FIX
 
-- For Bug1 , next_state is SEQ_1 when inp_bit= 1 for that case value.
+- For Bug 1 , next_state is SEQ_1 when inp_bit= 1 for that case value.
 - For Bug 2 , next_state is SEQ_10 when inp_bit!= 1 for that case value.
 - For Bug 3, next_state is SEQ_1 when inp_bit= 1 for that case value and next_state is SEQ_1 when inp_bit!= 1 for that case value.
 
