@@ -79,7 +79,7 @@ Output mismatches for the above inputs proving that there is a design bug
 
 ### TEST SCENARIO 6
 
-- Test Inputs: select= 1,0, inp_bit= 1,0,0,1,0,1,1
+- Test Inputs: reset= 1,0, inp_bit= 1,0,0,1,0,1,1
 - Expected Output: seq_seen=1
 - Observed Output in the DUT: dut.seq_seen=1
 
@@ -126,7 +126,7 @@ When inp_bit is 1 in this case value, next_state must be SEQ_1 and when inp_bit 
  
 ## VERIFICATION STRATEGY
 
-Functional verification using software simulation has been created using directed test cases for specific inputs where scenarios where DUT could fail to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and finding corner cases for functional analysis. After analysing this HDL design , test cases for faulty transitions between states have been included along with other passing cases.
+Functional verification using software simulation has been created using directed test cases for specific inputs where scenarios where DUT could fail to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and finding corner cases for functional analysis. After analysing this HDL design , directed test cases for faulty transitions between states have been included along with other passing cases.
 
 ## IS THE VERIFICATION COMPLETE?
 
