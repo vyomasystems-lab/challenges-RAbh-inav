@@ -1,10 +1,8 @@
 # See LICENSE.iitm for details
 # See LICENSE.vyoma for details
-import sys
 import cocotb
 from cocotb.decorators import coroutine
-from cocotb.triggers import Timer, RisingEdge
-from cocotb.result import TestFailure
+from cocotb.triggers import Timer
 from cocotb.clock import Clock
 from model_mkbitmanip import *
 # Clock Generation

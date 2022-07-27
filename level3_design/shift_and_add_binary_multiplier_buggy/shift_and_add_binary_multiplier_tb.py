@@ -4,7 +4,7 @@
 
 import cocotb
 from cocotb.clock import Clock
-from cocotb.triggers import RisingEdge, FallingEdge,ClockCycles
+from cocotb.triggers import FallingEdge
 
 @cocotb.test()
 async def shift_and_add_multiplier_bug1(dut):
