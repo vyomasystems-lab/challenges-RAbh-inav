@@ -52,7 +52,7 @@ Output matches for the above inputs proving that this case has passed
 ### TEST SCENARIO 3
 
 - Test Inputs: select=12, inp12=3, inp13=2
-- Expected Output: out=2
+- Expected Output: out=3
 - Observed Output in the DUT: dut.out=0
 
 Output mismatches for the above inputs proving that there is a design bug
