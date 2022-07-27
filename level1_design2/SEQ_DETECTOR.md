@@ -117,7 +117,7 @@ When inp_bit is 1 in this case value, next_state must be SEQ_1 and when inp_bit 
 
 - For Bug 1 , next_state is SEQ_1 when inp_bit= 1 for that case value.
 - For Bug 2 , next_state is SEQ_10 when inp_bit!= 1 for that case value.
-- For Bug 3, next_state is SEQ_1 when inp_bit= 1 for that case value and next_state is SEQ_1 when inp_bit!= 1 for that case value.
+- For Bug 3, next_state is SEQ_1 when inp_bit= 1 for that case value and next_state is SEQ_10 when inp_bit!= 1 for that case value.
 
 ![level 1 1011 seq detector error free result ](https://user-images.githubusercontent.com/89691159/181120265-19ec2355-f10a-4484-b27c-85f3909586f4.JPG)
 
@@ -126,7 +126,7 @@ When inp_bit is 1 in this case value, next_state must be SEQ_1 and when inp_bit 
  
 ## VERIFICATION STRATEGY
 
-Functional verification using software simulation has been created using directed test cases for specific inputs where scenarios where DUT could fail to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and finding corner cases for functional analysis. After analysing this HDL design , directed test cases for faulty transitions between states have been included along with other passing cases.
+Functional verification using software simulation has been created using directed test cases for specific scenarios where DUT could fail , to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and finding corner cases for functional analysis. After analysing this HDL design , directed test cases for faulty transitions between states have been included along with other passing cases.
 
 ## IS THE VERIFICATION COMPLETE?
 
