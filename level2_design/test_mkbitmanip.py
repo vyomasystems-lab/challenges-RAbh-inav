@@ -3,7 +3,6 @@
 import cocotb
 from cocotb.decorators import coroutine
 from cocotb.triggers import Timer
-from cocotb.clock import Clock
 from model_mkbitmanip import *
 # Clock Generation
 @cocotb.coroutine
