@@ -44,7 +44,7 @@ async def shift_and_add_multiplier_bug3(dut):
     await FallingEdge(dut.clk)
     dut.rst.value = 0
     await FallingEdge(dut.clk)
-    await FallingEdge(dut.clk)    
+    await FallingEdge(dut.clk)        
     dut.A.value=12
     dut.B.value=6
     await FallingEdge(dut.clk)
