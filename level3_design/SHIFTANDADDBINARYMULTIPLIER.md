@@ -9,7 +9,7 @@
 ![gitpod environment](https://user-images.githubusercontent.com/89691159/181111599-38a3bd40-93c2-4650-bd4b-7c43b21a9362.JPG)
 
 ## VERIFICATION ENVIRONMENT
-The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drive inputs to Design Under Test(DUT)(Sequence detector) which takes in 4 inputs clk,rst and 8 bit inputs A and B to give C as an 8 bit output.  
+The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drive inputs to Design Under Test(DUT)(Shift and add binary multiplier) which takes in 4 inputs clk,rst and 8 bit inputs A and B to give C as an 8 bit output.  
 
 Values are assigned using
     
