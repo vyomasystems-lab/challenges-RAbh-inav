@@ -68,17 +68,17 @@ The following error is seen:
 
 ### TEST SCENARIO 1
 
-- Test Inputs: RST_N = 0,1 , EN_mav_putvalue= 1 , mav_putvalue_src1= 0x5 , mav_putvalue_src2= 0x7 , mav_putvalue_src3= 0x3 , mav_putvalue_instr= 0x
-- Expected Output: mav_putvalue= 
-- Observed Output in the DUT: dut.mav_putvalue= 3
+- Test Inputs: RST_N = 0,1 , EN_mav_putvalue= 1 , mav_putvalue_src1= 0x5 , mav_putvalue_src2= 0x7 , mav_putvalue_src3= 0x3 , mav_putvalue_instr= 0x401070B3
+- Expected Output: mav_putvalue= 0x1b
+- Observed Output in the DUT: dut.mav_putvalue= 0x1
 
 Output mismatches for the above inputs proving that there is a design bug
 
 ### TEST SCENARIO 2
 
-- Test Inputs: RST_N = 0,1 , EN_mav_putvalue= 1 , mav_putvalue_src1= 0x5 , mav_putvalue_src2= 0x7 , mav_putvalue_src3= 0x3 , mav_putvalue_instr= 0x
-- Expected Output: mav_putvalue= 
-- Observed Output in the DUT: dut.mav_putvalue=1
+- Test Inputs: RST_N = 0,1 , EN_mav_putvalue= 1 , mav_putvalue_src1= 0x5 , mav_putvalue_src2= 0x7 , mav_putvalue_src3= 0x3 , mav_putvalue_instr= 0x401040B3
+- Expected Output: mav_putvalue= 0x1ffffffb
+- Observed Output in the DUT: dut.mav_putvalue= 0x1fffffb
 
 Output mismatches for the above inputs proving that this case has passed
 
