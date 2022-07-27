@@ -69,7 +69,7 @@ Output matches for the above inputs proving that this case has passed
 
 - Test Inputs: reset= 1,0 ; A=2,B=63
 - Expected Output: C=126
-- Observed Output in the DUT: dut.C=0
+- Observed Output in the DUT: dut.C=72
 
 Output mismatches for the above inputs proving that there is a design bug
 
