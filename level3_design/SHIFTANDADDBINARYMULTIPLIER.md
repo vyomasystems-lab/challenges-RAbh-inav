@@ -45,7 +45,7 @@ The following error is seen:
 
 - Test Inputs: rst= 1,0 ; A= 13,B=3
 - Expected Output: C=39
-- Observed Output in the DUT: dut.C=3
+- Observed Output in the DUT: dut.C=0
 
 Output mismatches for the above inputs proving that there is a design bug
 
