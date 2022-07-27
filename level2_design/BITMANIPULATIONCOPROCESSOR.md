@@ -57,7 +57,7 @@ Reference python model is called by
     
     expected_mav_putvalue = bitmanip(mav_putvalue_instr, mav_putvalue_src1, mav_putvalue_src2, mav_putvalue_src3)
     
-The assert statement is used for comparing the sequence detector's output to the expected value.
+The assert statement is used for comparing the bit manipulation coprocessor's output to the expected value from python program.
 
 The following error is seen:
 
