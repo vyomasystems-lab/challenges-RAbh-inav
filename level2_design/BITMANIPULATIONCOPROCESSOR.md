@@ -95,7 +95,7 @@ ANDN operation with its func7 value = 0100000 , opcode value = 0110011 , func3 v
 
 ## VERIFICATION STRATEGY
 
-Functional verification using software simulation has been created using directed test cases for specific inputs where scenarios where DUT could fail to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and comparing it with the bug free python program to finding corner cases for functional analysis. After analysing both HDL and python designs , directed test cases for specific  mav_putvalue_instr values have been included along with the other passing case.
+Functional verification using software simulation has been created using directed test cases for specific scenarios where DUT could fail, to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and comparing it with the bug free python program to find corner cases for functional analysis. After analysing both HDL and python designs , directed test cases for specific  mav_putvalue_instr values have been included along with the other passing case.
 
 ## IS THE VERIFICATION COMPLETE?
 
