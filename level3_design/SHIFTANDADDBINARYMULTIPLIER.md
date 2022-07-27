@@ -124,7 +124,7 @@ Condition A1 <= 12 is given negating values of A (A1 is from A) greater than 12 
  
 ## VERIFICATION STRATEGY
 
-Functional verification using software simulation has been created using directed test cases for specific inputs where scenarios where DUT could fail to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and finding corner cases for functional analysis. After analysing this HDL design , directed test cases for specific rst, A and B values have been included along with other passing cases.
+Functional verification using software simulation has been created using directed test cases for specific scenarios where DUT could fail, to identify the bugs in the design . These directed test cases are chosen after thorough analysis of HDL design to understand its functionality and finding corner cases for functional analysis. After analysing this HDL design , directed test cases for specific rst, A and B values have been included along with other passing cases.
 
 ## IS THE VERIFICATION COMPLETE?
 
