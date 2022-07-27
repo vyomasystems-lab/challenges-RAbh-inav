@@ -33,7 +33,7 @@ It waits for a specific time for tasks to complete using falling edge of clock i
    
     await FallingEdge(dut.clk)
     
-The assert statement is used for comparing the sequence detector's output to the expected value.
+The assert statement is used for comparing the shift and add binary multiplier's output to the expected value.
 
 The following error is seen:
 
@@ -67,7 +67,7 @@ Output matches for the above inputs proving that this case has passed
 
 ### TEST SCENARIO 4
 
-- Test Inputs: reset= 1,0 ; A=2,B=63
+- Test Inputs: rst= 1,0 ; A=2,B=63
 - Expected Output: C=126
 - Observed Output in the DUT: dut.C=72
 
@@ -75,7 +75,7 @@ Output mismatches for the above inputs proving that there is a design bug
 
 ### TEST SCENARIO 5
 
-- Test Inputs: reset= 1,0 ; A=12,B=7
+- Test Inputs: rst= 1,0 ; A=12,B=7
 - Expected Output: C=84
 - Observed Output in the DUT: dut.C=84
 
