@@ -69,16 +69,16 @@ The following error is seen:
 ### TEST SCENARIO 1
 
 - Test Inputs: RST_N = 0,1 , EN_mav_putvalue= 1 , mav_putvalue_src1= 0x5 , mav_putvalue_src2= 0x7 , mav_putvalue_src3= 0x3 , mav_putvalue_instr= 0x401070B3
-- Expected Output: mav_putvalue= 0x1b
-- Observed Output in the DUT: dut.mav_putvalue= 0x1
+- Expected Output: mav_putvalue= 0x1
+- Observed Output in the DUT: dut.mav_putvalue= 0xb
 
 Output mismatches for the above inputs proving that there is a design bug
 
 ### TEST SCENARIO 2
 
 - Test Inputs: RST_N = 0,1 , EN_mav_putvalue= 1 , mav_putvalue_src1= 0x5 , mav_putvalue_src2= 0x7 , mav_putvalue_src3= 0x3 , mav_putvalue_instr= 0x401040B3
-- Expected Output: mav_putvalue= 0x1ffffffb
-- Observed Output in the DUT: dut.mav_putvalue= 0x1fffffb
+- Expected Output: mav_putvalue= 0x1ffffffffb
+- Observed Output in the DUT: dut.mav_putvalue= 0x1fffffffb
 
 Output mismatches for the above inputs proving that this case has passed
 
@@ -92,8 +92,6 @@ Output mismatches for the above inputs proving that this case has passed
 For test scenario 1 , bug is found .
 
 ANDN operation with its func7 value = 0100000 , opcode value = 0110011 , func3 value= 111 has its output value different from its expected value from bug free python model causing a design bug
-
-![error](https://user-images.githubusercontent.com/89691159/181140282-da3cfe6e-f4bb-4c73-af67-bed3b9520fbe.JPG)
 
 ## VERIFICATION STRATEGY
 
