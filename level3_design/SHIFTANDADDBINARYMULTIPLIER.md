@@ -129,5 +129,3 @@ Functional verification using software simulation has been created using directe
 ## IS THE VERIFICATION COMPLETE?
 
  Functional Verification is complete and fault coverage is done as all the bugs have been found in the design using test scenarios 
-
-
